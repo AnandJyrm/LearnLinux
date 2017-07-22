@@ -1,0 +1,5 @@
+apropos "string":
+    Search the manual page for names and descriptions matching "string"
+
+example:
+    apropos gnome

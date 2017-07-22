@@ -1,0 +1,3 @@
+duplicates and shares input to two places
+
+example:

@@ -1,2 +1,2 @@
 # LearnLinux
-Manuals on some useful Linux tools
+Simple use case manuals on some useful Linux tools.

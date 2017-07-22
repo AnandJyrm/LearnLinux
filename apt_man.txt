@@ -1,10 +1,15 @@
-Apt is the new package manager introduced in Ubuntu 16.04 which simplifies and consolidates the various functions performed by apt-get. Main options to look out for are:
+Apt is the simplified package manager introduced in Ubuntu 16.04 which consolidates the previous apt-get, for new users. Main options to look out for are:
 
-	list 		 -> list packages based on names
-	show 		 -> show package details
-	update		 -> update list of available packages
-	install 	 -> install package
-	remove 		 -> remove package
-	upgrade 	 -> upgrade the system by installing/upgrading packages
-	full-upgrade -> upgrade the system; can also remove existing packages
-	autoremove   -> automatically remove unused packages
+	list 		    -> list packages based on names
+	show 		    -> show package details
+	update		    -> update list of available packages
+	install 	    -> install package
+	remove 		    -> remove package
+	upgrade 	    -> upgrade the system by installing/upgrading packages
+	autoremove      -> automatically remove unused packages
+
+example:
+    sudo apt update
+    sudo apt upgrade -y
+    sudo apt install bridge-utils
+    apt show docker.io
