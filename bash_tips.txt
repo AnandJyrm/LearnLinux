@@ -1,0 +1,51 @@
+Some Bash Shell Prompt tips
+________________________________________________________________________________
+Source
+
+    "source script.sh" or equivalently ". script.sh"
+    
+	Loads or executes the file script.sh in the current shell
+
+	Different from executing the script normally using ./script.sh
+
+example:
+  script.sh:
+	#! /bin/bash
+	cd somedir
+What happens when we execute a script
+	$ pwd
+	/home/user
+	$ ./script.sh
+	$ pwd
+	/home/user
+
+What happens when we source a script
+	$ pwd
+	/home/user
+	$ source script.sh
+	$ pwd
+	/home/user/somedir
+
+The differences is because:
+
+When you execute the script you are opening a new shell, type the commands in the new shell, copy the output back to your current shell, then close the new shell. Any changes to environment will take effect only in the new shell and will be lost once the new shell is closed.
+
+When you source the script you are typing the commands in your current shell. Any changes to the environment will take effect and stay in your current shell.
+
+________________________________________________________________________________
+
+Special characters in Bash
+
+echo $?
+	prints the exit status of the previosly executed command
+echo $$
+	prints the pid of the current shell
+________________________________________________________________________________
+
+command substitution using $()
+	echo $(pwd)
+	will execute the command in brackets and return the result to the calling function
+	can be nested
+________________________________________________________________________________
+
+
