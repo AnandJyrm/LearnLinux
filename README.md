@@ -5,3 +5,4 @@ Simple use case manuals on some useful Linux tools.
 - [ ] awk
 - [ ] sed
 - [ ] jq
+- [ ] git
